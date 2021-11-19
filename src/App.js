@@ -13,8 +13,7 @@ function App() {
       .then((response)=>{
         
         setProducts(response.data.results)
-        console.log(response.data.sfacets)
-        // console.log()
+  
       })
   },[search])
   useEffect(()=>{
@@ -23,8 +22,7 @@ function App() {
       .then((response)=>{
         setFinal(response.data)
         setProducts(response.data.results)
-        console.log(response.data.sfacets)
-        // console.log()
+ 
       })
   },[inputv])
   useEffect(()=>{
